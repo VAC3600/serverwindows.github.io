@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1.7rem;
+}
+
+h2.title {
+    font-family: Arial;
+    padding-left: 1rem;
+    border-left: 5px solid crimson;
+    margin-left: 3rem;
+    text-align: left;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+
+
+#indtast {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    list-style: none;
+    width: 31.25rem;
+    text-align: center;
+    background-color: rgba(233, 238, 232, 0.68);
+    padding: 1rem 0;
+    z-index: 0;
+    position: relative;
+}
+
+li {
+    font-size: 1rem;
+    display: block;
+    margin: 1rem auto;
+    font-weight: 600;
+}
+
+
+input,
+#igen {
+    display: block;
+    margin: .5rem auto;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 40%;
+    outline: none;
+    border: 1px solid black;
+    background-color:rgba(233, 238, 232, 0.618)
+}
+
+input:focus {
+    background-color:rgba(255, 248, 248, 0.612)
+}
+
+input[type=submit],
+#igen {
+    border: 2px solid black;
+    background-color: #eee;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    font-style: italic;
+    cursor: pointer;
+}
+input[type=submit]:hover,
+#igen:hover {
+    background-color: black;
+    color: #eee;
+    transform: scale(1.02);
+    transition: transform .4s;
+}
+
+header {
+    height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(233, 238, 232, 0.468),
+        rgba(109, 218, 182, 0.5)
+      ), url(img/hero.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    top: 0;
+}
+nav {
+    height: 7rem;
+    padding-top: 2rem;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.fraction {
+    display: inline-block;
+    vertical-align: middle; 
+    margin: 0 0.2em 0.4ex;
+    text-align: center;
+}
+.fraction > span {
+    display: block;
+    padding-top: 0.15em;
+}
+.fraction span#fdn {border-top: thin solid black;}
+.fraction span.bar {display: none;}
+
+#regnestykke,
+#regnestykke2 {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+#igen {
+    display: none;
+    bottom: 0px;
+    margin: 1rem auto;
+    width: 12.5rem;
+    text-align: center;
+    background-color: #eee;
+    border: 2px solid black;
+    color: black;
+}
+
+#igen:hover {
+    background-color: black;
+    color: #eee;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+    #indtast {
+      width: 90%;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    li {
+        font-size: .8rem;
+        margin: .5rem auto;
+    }
+    input {
+       margin-top: .1rem;
+    }
+
+    h2.title {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        padding-top: .5rem;
+    }
+
+    header {
+        position: absolute;
+        background-position: no-repeat center top fixed;
+        background-size: 280% auto;
+    }
+    .footer-text { display: none; }
+  }
+
+.footer-text {
+  position: fixed;
+  bottom: 0;
+  right: 2rem;
+  margin-bottom: 3rem;
+  color: crimson;
+}
